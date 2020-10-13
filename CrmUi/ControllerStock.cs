@@ -1,16 +1,11 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using CrmiMarket.Classes;
@@ -109,6 +104,7 @@ namespace CrmUi
         /// <summary>
         /// Создание подключения к базе данных(ориентация по имени интервала(DayStocks,FourHours,Hours or HalfHours)) по соответсвующему ключу(idSymbol) и перенос данных в таблицу DataTable
         /// </summary>
+        /// <param name="NameSymbol">Имя символа</param>
         /// <param name="NameTable">Имя интервала в базе данных(DayStocks,FourHours,Hours or HalfHours)</param>
         private void createAdapter(string NameTable, string NameSymbol)
         {

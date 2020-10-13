@@ -16,29 +16,18 @@ namespace CrmUi
     public partial class Main : Form
     {
         public string text1;
-        public ProgressBar progressBar1 { get; set; }
+        
         public Main()
         {
-            progressBar1 = new ProgressBar();
-            Controls.Add(progressBar1);
+            
             InitializeComponent();
             //Information();
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-            progressBar1.Location = new Point(289, 103);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(100, 23);
-            progressBar1.TabIndex = 1;
-
+            
 
         }
         
-
-        //private void dayToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    var CatalogDay = new DayStocks<Day>(db.days);
-
-        //    CatalogDay.Show();
-        //}
+               
 
 
         private void newSymbolToolStripMenuItem_Click(object sender, EventArgs e)

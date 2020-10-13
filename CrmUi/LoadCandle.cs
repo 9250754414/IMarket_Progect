@@ -5,12 +5,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.IO;
 using System.Linq;
-
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace CrmUi
 {
@@ -25,7 +22,12 @@ namespace CrmUi
         {
             LoadcandleEvent.Invoke();
         }
-
+        /// <summary>
+        /// Метод выгрузки данных в DataTabel из файл XLS
+        /// </summary>
+        /// <param name="PathTofilename">Путь к файлу</param>
+        /// <param name="sheetName">Имя фвйла</param>
+        /// <returns></returns>
         public DataTable LoadExelSheetToTable(string PathTofilename, string sheetName)
         {
 

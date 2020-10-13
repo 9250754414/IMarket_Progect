@@ -399,6 +399,9 @@ namespace CrmUi
         {
             listBox1.Visible = false;
         }
+        /// <summary>
+        /// Метод выбора пути и имени файла
+        /// </summary>
         public void ChooseFolder()
         {
             openFileDialog1.Title = "Выберите файл с расширением xlsx";
